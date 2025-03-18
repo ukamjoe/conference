@@ -1,0 +1,351 @@
+*{
+    margin:none;
+    border: none;
+}
+
+body{
+    background-color: hsl(13, 31%, 94%);
+    font-family: serif;
+}
+
+.main-container{
+    width: 95%;
+    height: 220vh;
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    position: relative;
+}
+
+.main-container h1{
+    color: rgb(82, 27, 27);
+}
+
+.container{
+    width: 940px;
+    height: 200vh;
+}
+
+.first-row{
+    width: 940px;
+    display: flex;
+}
+
+.waffle{
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.creme{
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.macaron{
+    width: 300px;
+    height: 400px;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(images/image-waffle-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-2{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(images/image-creme-brulee-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-3{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(images/image-macaron-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.clik{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: -20px;
+    margin-left: 50px;
+    display: flex;
+    background-color: white;
+    position: absolute;
+    border: 1px solid gray;
+    cursor: pointer;
+    box-shadow: 0 2px lightgray; /* Creates the shadow below the button */
+    transition: all 0.1s ease-in-out; /* Smooth animation */
+}
+
+.clik:hover{
+    border:1px solid red;
+    color: red;
+}
+
+/*
+.clik:focus {
+    background-color: red;
+    color: #fff; 
+    border: none;
+    display: flex;
+    transform: translateY(4px); 
+    box-shadow: 0 2px lightgrey; 
+} 
+*/
+
+.clik img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.clik p{
+    margin-top: 10px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.content{
+    height: 70px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.content small{
+    font-size: 14px;
+    color: grey;
+}
+
+.content p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.content h3{
+    color: red;
+    margin-top: -10px;
+}
+
+.content-2{
+    height: 70px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.content-2 small{
+    font-size: 14px;
+    color: grey;
+}
+
+.content-2 p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.content-2 h3{
+    color: red;
+    margin-top: -10px;
+}
+
+.content-3{
+    height: 70px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.content-3 small{
+    font-size: 14px;
+    color: grey;
+}
+
+.content-3 p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.content-3 h3{
+    color: red;
+    margin-top: -10px;
+}
+
+.second-row{
+    width: 940px;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+}
+
+.mage{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/image-tiramisu-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.mage-2{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/image-baklava-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.mage-3{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/image-meringue-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.tent{
+    width: 300px;
+    height: 70px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.tent small{
+    color: gray;
+    font-size: 14px;
+}
+
+.tent p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.tent h3{
+    color: red;
+    margin-top: -10px;
+}
+
+.third-row{
+    width: 940px;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+}
+
+.cake{
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.brownie{
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.panna{
+    width: 300px;
+    height: 400px;
+}
+
+.page{
+    width: 300px;
+    height: 300px;
+    background-image:url(images/image-cake-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.page-2{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/image-brownie-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.page-3{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/image-panna-cotta-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.bent{
+    width: 300px;
+    height: 70px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.bent small{
+    color: gray;
+    font-size: 14px;
+}
+
+.bent p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.bent h3{
+    color: red;
+    margin-top: -10px;
+}
+
+.main-wrapper{
+    width: 300px;
+    height: 300px;
+    max-height: 400px;
+    margin-left: 30px;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.main-wrapper h2{
+    display: flex;
+    color: red;
+    margin-left: 15px;
+}
+
+#numb{
+    color: red;
+    margin-left: 5px;
+}
+
+.odd{
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.odd img{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.odd h4{
+    font-size: 13px;
+    color: brown;
+}
