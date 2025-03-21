@@ -75,6 +75,7 @@ body{
     background-size: cover;
 }
 
+/*Style for button*/
 .clik{
     width: 200px;
     height: 40px;
@@ -92,19 +93,7 @@ body{
 
 .clik:hover{
     border:1px solid red;
-    color: red;
 }
-
-/*
-.clik:focus {
-    background-color: red;
-    color: #fff; 
-    border: none;
-    display: flex;
-    transform: translateY(4px); 
-    box-shadow: 0 2px lightgrey; 
-} 
-*/
 
 .clik img{
     width: 25px;
@@ -118,6 +107,7 @@ body{
     margin-left: 8px;
     font-weight: bold;
 }
+/*End of styling for button */
 
 .content{
     height: 70px;
@@ -315,37 +305,333 @@ body{
 
 .main-wrapper{
     width: 300px;
-    height: 300px;
-    max-height: 400px;
+    min-height: 400px; 
+    height:max-content; 
+    max-height: none; 
     margin-left: 30px;
     margin-top: 40px;
+    border-radius: 5px;
     background-color: white;
 }
 
 .main-wrapper h2{
+    width:max-content;
     display: flex;
-    color: red;
-    margin-left: 15px;
+    color: darkred;
+    font-size: 23px;
+    margin-top: -10px;
 }
 
 #numb{
-    color: red;
+    color: darkred;
     margin-left: 5px;
 }
 
 .odd{
-    width: 200px;
-    margin-left: 40px;
+    width: 300px;
     margin-top: 40px;
+    justify-content: center;
+    text-align: center;
 }
 
 .odd img{
     width: 100px;
     height: 100px;
-    margin-left: 50px;
+    margin-left: -20px;
 }
 
 .odd h4{
     font-size: 13px;
     color: brown;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Popup Content */
+.popup-content {
+    width: 350px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid ;
+}
+
+.popup-content img{
+    width: 30px;
+    height: 30px;
+    margin-left: -320px;
+    border: 2px solid;
+}
+
+.popup-content h3 {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.popup-content .close-popup {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content .close-popup:hover {
+    background-color: #0056b3;
+}
+
+
+/* Controls for Quantity */
+.controls {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+
+.controls .quantity {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.decrement, .increment {
+    cursor: pointer;
+    color: white;
+}
+
+/* Cart Container Styling */
+.main-wrapper {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Empty Cart Styling */
+.odd {
+    text-align: center;
+    padding: 20px;
+}
+
+.odd img {
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+.odd h4 {
+    color: #888;
+}
+
+/* Cart Items Styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.item-details {
+    text-align: left;
+    width: 300px;
+    margin-left: -35px;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.item-details p {
+    margin: 0;
+}
+
+.item-details img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.item-content{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.item-info {
+    font-size: 14px;
+    color: #888;
+}
+
+.item-info span{
+    color:darkred;
+    margin-right: 10px;
+}
+
+.item-info strong{
+    color: black;
+    margin-left: 5px;
+}
+
+.item-content img{
+    width: 15px;
+    height: 15px;
+    margin-left: 150px;
+    border: 2px solid burlywood;
+}
+
+/* Remove Item Button */
+.remove-item {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.remove-item:hover{
+    border-color: black;
+}
+
+/* Order Summary */
+.order-total {
+    width: 340px;
+    font-size: 18px;
+    margin-left: -40px;
+    font-weight: bold;
+    color: black;
+    margin-top: -8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.sub-content h3{
+    width: 320px;
+    display: flex;
+    font-size: 30px;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: 14px;
+    color: grey;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.carbon{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-content: center;
+    background-color: hsl(13, 31%, 94%) ;
+    border-radius: 10px;
+}
+
+.txt{
+    width: max-content;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carbon img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/*Button styling*/
+.confirm{
+    width: 300px;
+    height: 50px;
+    background-color: darkred;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Increment and Decrement Controls */
+.decrement, .increment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.decrement ion-icon{
+    color: white;
+}
+
+.decrement ion-icon:hover{
+    background-color:white ;
+    border-radius: 50%;
+    color: red;
+}
+
+.decrement:hover, .increment:hover {
+    color: #0056b3;
+}
+
+.increment ion-icon:hover{
+    background-color:white ;
+    border-radius: 50%;
+    color: red;
+}
+
+.increment ion-icon{
+    color: white;
+}
+
+.custom-hr {
+    width: 300px;
+    margin-left: -25px;
+    margin-top:-45px; 
+    position: absolute;
+    border: 1px solid hsl(12, 20%, 44%); 
 }
